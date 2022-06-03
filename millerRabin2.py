@@ -29,7 +29,7 @@ def miillerRabin(n, t):
         y = exponenciacionModular(a, r, n)
 
         if y != 1 and y != n - 1:
-            # Sigue elevando x al cuadrado 
+            # Sigue elevando y al cuadrado 
             # comprobando que no hay j para el cual (a^r)^(2^j) = -1 (mod n)
             j = 0
             while j < s - 1 and y != n - 1:
